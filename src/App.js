@@ -1,5 +1,5 @@
 import './App.scss';
-import { RocketsPage } from './pages/Rockets>';
+import RocketsPage from './pages/RocketsPage';
 import { fetchMissions } from './redux/missions/missions-api';
 
 function App() {
