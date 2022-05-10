@@ -8,7 +8,6 @@ const Mission = (props) => {
   const user = useSelector((state) => state.user);
 
   const isBooked = user.missions.includes(id);
-  console.log('is Booked?', isBooked);
 
   const handleClick = () => {
     if (isBooked) {
@@ -22,7 +21,7 @@ const Mission = (props) => {
     <li className="mission">
       <h2>{name}</h2>
       <p>{description}</p>
-      <p className="mission-status">NOT A MEMBER</p>
+      <p className="mission-status">{isBooked ? 'Active Member' : 'NOT A MEMBER'}</p>
       <button onClick={handleClick} type="button" className="mission-btn">
         {isBooked ? 'Leave' : 'Join'}
       </button>
