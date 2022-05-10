@@ -1,4 +1,5 @@
 import { fetchRockets } from './rockets-api';
+
 const GET_ROCKETS = 'spaceTravel/rockets/GET_ROCKETS';
 
 const initialState = [];
@@ -12,9 +13,7 @@ export default function reducer(state = initialState, action) {
   }
 }
 
-export const getRockets = () => {
-  return async (dispatch) => {
-    const rockets = await fetchRockets();
-    dispatch({ type: GET_ROCKETS, payload: rockets });
-  };
+export const getRockets = () => async (dispatch) => {
+  const rockets = await fetchRockets();
+  dispatch({ type: GET_ROCKETS, payload: rockets });
 };

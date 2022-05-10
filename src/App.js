@@ -1,19 +1,19 @@
-import './App.scss';
+import { Routes, Route } from 'react-router-dom';
+import NavBar from './components/navBar/NavBar';
 import RocketsPage from './pages/RocketsPage';
-import { fetchMissions } from './redux/missions/missions-api';
+import MissionsPage from './pages/MissionsPage';
+import ProfilePage from './pages/ProfilePage';
+import './App.scss';
 
-function App() {
-  const printMissions = async () => {
-    const missions = await fetchMissions();
-    console.log(missions);
-  };
-  printMissions();
-  return (
-    <div className="App">
-      <h1>Hola</h1>
-      <RocketsPage />
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    <NavBar />
+    <Routes>
+      <Route exact path="/" element={<RocketsPage />} />
+      <Route exact path="/missions" element={<MissionsPage />} />
+      <Route exact path="/profile" element={<ProfilePage />} />
+    </Routes>
+  </div>
+);
 
 export default App;
