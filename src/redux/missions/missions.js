@@ -1,4 +1,5 @@
 import { fetchMissions } from './missions-api';
+
 const GET_MISSIONS = 'GET_MISSIONS';
 
 const initialState = [];
@@ -12,9 +13,7 @@ export default function reducer(state = initialState, action) {
   }
 }
 
-export const getMissions = () => {
-  return async (dispatch) => {
-    const missions = await fetchMissions();
-    dispatch({ type: GET_MISSIONS, payload: missions });
-  };
+export const getMissions = () => async (dispatch) => {
+  const missions = await fetchMissions();
+  dispatch({ type: GET_MISSIONS, payload: missions });
 };

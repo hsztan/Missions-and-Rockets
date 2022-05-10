@@ -5,17 +5,15 @@ import MissionsPage from './pages/MissionsPage';
 import ProfilePage from './pages/ProfilePage';
 import './App.scss';
 
-const App = () => {
-  return (
-    <div className="App">
-      <NavBar />
-      <Routes>
-        <Route exact path="/" element={<RocketsPage />} />
-        <Route exact path="/missions" element={<MissionsPage />} />
-        <Route exact path="/profile" element={<ProfilePage />} />
-      </Routes>
-    </div>
-  );
-};
+const App = () => (
+  <div className="App">
+    <NavBar />
+    <Routes>
+      <Route exact path="/" element={<RocketsPage />} />
+      <Route exact path="/missions" element={<MissionsPage />} />
+      <Route exact path="/profile" element={<ProfilePage />} />
+    </Routes>
+  </div>
+);
 
 export default App;
