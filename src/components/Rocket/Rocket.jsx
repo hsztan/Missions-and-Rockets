@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'; 
+
 const Rocket = (props) => {
   const { image, name, description } = props;
   return (
@@ -7,6 +9,12 @@ const Rocket = (props) => {
       <p>{description}</p>
     </li>
   );
+};
+
+Rocket.propTypes = {
+  name: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
 };
 
 export default Rocket;
