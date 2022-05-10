@@ -8,6 +8,7 @@ export const fetchMissions = async () => {
       return missions;
     }
   } catch (error) {
-    return console.log(error.message);
+    return error;
   }
+  return false;
 };

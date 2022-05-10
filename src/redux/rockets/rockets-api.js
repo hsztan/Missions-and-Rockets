@@ -8,6 +8,7 @@ export const fetchRockets = async () => {
       return rockets;
     }
   } catch (error) {
-    return console.log(error.message);
+    return error;
   }
+  return false;
 };
