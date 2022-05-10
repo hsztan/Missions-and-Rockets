@@ -20,7 +20,7 @@ export default function reducer(state = initialState, action) {
       return {
         ...state,
         missions: state.missions.filter(
-          (mission) => mission.id !== action.payload
+          (mission) => mission.id !== action.payload,
         ),
       };
     default:
