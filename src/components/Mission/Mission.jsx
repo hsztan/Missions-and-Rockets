@@ -1,16 +1,18 @@
 import PropTypes from 'prop-types';
-import { useDispatch, useSelector } from 'react-redux';
-import { joinMission, leaveMission } from '../../redux/user/user';
+import { useDispatch } from 'react-redux';
+import { joinMission, leaveMission } from '../../redux/missions/missions';
 
 const Mission = (props) => {
-  const { name, description, id } = props;
+  const {
+    id,
+    name,
+    description,
+    join,
+  } = props;
   const dispatch = useDispatch();
-  const user = useSelector((state) => state.user);
-
-  const isBooked = user.missions.includes(id);
 
   const handleClick = () => {
-    if (isBooked) {
+    if (join) {
       dispatch(leaveMission(id));
     } else {
       dispatch(joinMission(id));
@@ -21,9 +23,11 @@ const Mission = (props) => {
     <li className="mission">
       <h2>{name}</h2>
       <p>{description}</p>
-      <p className="mission-status">{isBooked ? 'Active Member' : 'NOT A MEMBER'}</p>
+      <p className="mission-status">
+        {join ? 'Active Member' : 'NOT A MEMBER'}
+      </p>
       <button onClick={handleClick} type="button" className="mission-btn">
-        {isBooked ? 'Leave' : 'Join'}
+        {join ? 'Leave' : 'Join'}
       </button>
     </li>
   );
@@ -35,4 +39,5 @@ Mission.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
+  join: PropTypes.bool.isRequired,
 };
