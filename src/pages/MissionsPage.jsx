@@ -1,7 +1,9 @@
+import MissionsList from '../components/MissionsList/MissionsList';
+
 const MissionsPage = () => {
   return (
     <div>
-      <h1>Missions</h1>
+      <MissionsList />
     </div>
   );
 };
