@@ -1,8 +1,20 @@
-# Getting Started with Create React App
+# BookStore
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> This is a book store SPA app that creates a library of books which can store books and its authors as well as showing the status of the book. The state is managed with Redux.
+## Built With
 
-## Available Scripts
+- HTML
+- CSS
+- SASS
+- Javascript
+- Git
+- React
+- Redux
+
+## Live Demo
+- [Netlify](https://book-store-hsztan.netlify.app/)
+
+## Setup
 
 In the project directory, you can run:
 
@@ -68,3 +80,32 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## Authors
+
+👤 **Henry Nawrocki**
+
+- GitHub: [@hsztan](https://github.com/hsztan)
+- Twitter: [@hsztanski](https://twitter.com/hsztanski)
+- LinkedIn: [henry-nawrocki](https://linkedin.com/in/henry-nawrocki)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
