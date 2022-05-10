@@ -1,7 +1,9 @@
+import RocketsList from '../components/RocketsList/RocketsList';
+
 const RocketsPage = () => {
   return (
     <div>
-      <h1>Rockets</h1>
+      <RocketsList />
     </div>
   );
 };
