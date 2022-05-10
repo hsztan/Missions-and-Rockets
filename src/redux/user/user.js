@@ -12,7 +12,7 @@ export default function reducer(state = initialState, action) {
     case REMOVE_ROCKET:
       return {
         ...state,
-        rockets: state.rockets.filter((rocket) => rocket.id !== action.payload),
+        rockets: state.rockets.filter((rocketId) => rocketId !== action.payload),
       };
     case JOIN_MISSION:
       return { ...state, missions: [...state.missions, action.payload] };
@@ -20,7 +20,7 @@ export default function reducer(state = initialState, action) {
       return {
         ...state,
         missions: state.missions.filter(
-          (mission) => mission.id !== action.payload
+          (missionId) => missionId !== action.payload,
         ),
       };
     default:
@@ -38,9 +38,9 @@ export const removeRocket = (id) => ({
   payload: id,
 });
 
-export const joinMission = (mission) => ({
+export const joinMission = (id) => ({
   type: JOIN_MISSION,
-  payload: mission,
+  payload: id,
 });
 
 export const leaveMission = (id) => ({
