@@ -1,19 +1,24 @@
+import { Routes, Route, Switch } from 'react-router-dom';
 import './App.scss';
 import RocketsPage from './pages/RocketsPage';
-import { fetchMissions } from './redux/missions/missions-api';
+import MissionsPage from './pages/MissionsPage';
+import ProfilePage from './pages/ProfilePage';
 
-function App() {
-  const printMissions = async () => {
-    const missions = await fetchMissions();
-    console.log(missions);
-  };
-  printMissions();
+const App = () => {
   return (
     <div className="App">
-      <h1>Hola</h1>
+      <Routes>
+        <Switch>
+          <Route path="/" element={<RocketsPage />} />
+          <Route path="/missions" element={<MissionsPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
+        </Switch>
+      </Routes>
       <RocketsPage />
+      <MissionsPage />
+      <ProfilePage />
     </div>
   );
-}
+};
 
 export default App;
