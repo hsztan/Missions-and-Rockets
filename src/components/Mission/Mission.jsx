@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Mission = (props) => {
   const { name, description } = props;
   return (
@@ -9,3 +11,8 @@ const Mission = (props) => {
 };
 
 export default Mission;
+
+Mission.propTypes = {
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
