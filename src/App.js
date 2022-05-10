@@ -1,22 +1,19 @@
-import { Routes, Route, Switch } from 'react-router-dom';
-import './App.scss';
+import { Routes, Route } from 'react-router-dom';
+import NavBar from './components/navBar/NavBar';
 import RocketsPage from './pages/RocketsPage';
 import MissionsPage from './pages/MissionsPage';
 import ProfilePage from './pages/ProfilePage';
+import './App.scss';
 
 const App = () => {
   return (
     <div className="App">
+      <NavBar />
       <Routes>
-        <Switch>
-          <Route path="/" element={<RocketsPage />} />
-          <Route path="/missions" element={<MissionsPage />} />
-          <Route path="/profile" element={<ProfilePage />} />
-        </Switch>
+        <Route exact path="/" element={<RocketsPage />} />
+        <Route exact path="/missions" element={<MissionsPage />} />
+        <Route exact path="/profile" element={<ProfilePage />} />
       </Routes>
-      <RocketsPage />
-      <MissionsPage />
-      <ProfilePage />
     </div>
   );
 };
