@@ -1,26 +1,38 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { reserveRocket, removeRocket } from '../../redux/rockets/rockets';
+import './Rocket.css';
 
 const Rocket = (props) => {
   const { id, name, image, reserve, description } = props;
   const dispatch = useDispatch();
+  const reserveSpan = document.getElementById('reserved');
 
   const handleClick = () => {
     if (reserve) {
       dispatch(removeRocket(id));
+      reserveSpan.classList.toggle('reserved');
     } else {
       dispatch(reserveRocket(id));
+      reserveSpan.classList.toggle('reserved');
     }
   }
   return (
-    <li className="mission">
-      <img src={image} />
-      <h2>{name}</h2>
-      <span className="mission-status">{reserve ? 'RESERVED' : ''}</span>
-      <p>{description}</p>
-      <button onClick={handleClick}>{reserve ? 'Reserve Rocket' : 'Cancel Reservetaion'}</button>
-    </li>
+    <>
+      <ul className="container">
+        <li className="rocket">
+          <img className="thumbnail" src={image} />
+          <div className="infoContainer">
+            <h2 className="rocketName">{name}</h2>
+            <span className="" id="reserved">{reserve ? 'RESERVED' : ''}</span>
+            <span className="rocketInfo">{description}</span>
+            <div>
+              <button className="rocketButton" onClick={handleClick}>{reserve ? 'Cancel Reservation' : 'Reserve Rocket'}</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </>
   );
 };
 

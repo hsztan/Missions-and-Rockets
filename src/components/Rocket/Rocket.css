@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+.container {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.rocket {
+  display: flex;
+  list-style: none;
+  padding: 1em;
+  margin: 0 1em;
+}
+
+.thumbnail {
+  width: 20vw;
+  height: auto;
+}
+
+.infoContainer {
+  margin-left: 1em;
+}
+
+.rocketName {
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.reserved {
+  width: 5em;
+  height: 2em;
+  background-color: #045dfa;
+  color: #fff;
+  border-radius: 5px;
+  border: solid #045dfa;
+}
+
+.rocketInfo {
+  font-weight: 400;
+}
+
+.rocketButton {
+  width: 18vw;
+  height: 2em;
+  margin-top: 1em;
+  background-color: #045dfa;
+  color: #fff;
+  border-radius: 5px;
+  border: solid #045dfa;
+  font-size: 1.5em;
+}
