@@ -1,6 +1,7 @@
 # Space Travelers
 
 > This is a Space Travelers SPA app that creates a rockets and missions lists which users can book and join missions and rockets. The state is managed with Redux.
+
 ## Built With
 
 - HTML

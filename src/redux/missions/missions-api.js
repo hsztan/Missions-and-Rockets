@@ -12,3 +12,5 @@ export const fetchMissions = async () => {
   }
   return false;
 };
+
+export default fetchMissions;
