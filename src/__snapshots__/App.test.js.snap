@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pages renders correctly Calculator page renders correctly 1`] = `
+<div>
+  <ul
+    className="rockets-list"
+  />
+</div>
+`;
+
+exports[`Pages renders correctly Home page renders correctly 1`] = `
+<div
+  className="profile"
+>
+  <div
+    className="joined"
+  >
+    <div
+      className="missions"
+    >
+      <h1>
+        My Missions
+      </h1>
+      <ul />
+    </div>
+    <div
+      className="rockets"
+    >
+      <h1>
+        My Rockets
+      </h1>
+      <ul />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Pages renders correctly Missions page renders correctly 1`] = `
+<div>
+  <div
+    className="missions-list"
+  >
+    <table>
+      <thead>
+        <tr>
+          <th>
+            Mission
+          </th>
+          <th>
+            Description
+          </th>
+          <th>
+            Status
+          </th>
+          <th>
+             
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Pages renders correctly Profile page renders correctly 1`] = `
+<div
+  className="profile"
+>
+  <div
+    className="joined"
+  >
+    <div
+      className="missions"
+    >
+      <h1>
+        My Missions
+      </h1>
+      <ul />
+    </div>
+    <div
+      className="rockets"
+    >
+      <h1>
+        My Rockets
+      </h1>
+      <ul />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Pages renders correctly Quote page renders correctly 1`] = `
+<div>
+  <div
+    className="missions-list"
+  >
+    <table>
+      <thead>
+        <tr>
+          <th>
+            Mission
+          </th>
+          <th>
+            Description
+          </th>
+          <th>
+            Status
+          </th>
+          <th>
+             
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Pages renders correctly Rockets page renders correctly 1`] = `
+<div>
+  <ul
+    className="rockets-list"
+  />
+</div>
+`;
