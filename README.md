@@ -13,7 +13,7 @@
 - Redux
 
 ## Live Demo
-- [Netlify](https://book-store-hsztan.netlify.app/)
+- [Netlify](https://space-hub-travelers.netlify.app/)
 
 ## Setup
 
