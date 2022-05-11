@@ -1,9 +1,9 @@
-const ProfilePage = () => {
-  return (
-    <div>
-      <h1>Profile</h1>
-    </div>
-  );
-};
+import JoinedList from '../components/JoinedList/JoinedList';
+
+const ProfilePage = () => (
+  <div className="profile">
+    <JoinedList />
+  </div>
+);
 
 export default ProfilePage;
