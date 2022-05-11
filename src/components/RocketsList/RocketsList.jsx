@@ -17,7 +17,7 @@ const RocketsList = () => {
         <Rocket
           key={rocket.id}
           id={rocket.id}
-          image={rocket.flickr_images}
+          image={rocket.flickr_images[0]}
           name={rocket.rocket_name}
           description={rocket.description}
           reserve={rocket.reserve}

@@ -4,7 +4,13 @@ import { reserveRocket, removeRocket } from '../../redux/rockets/rockets';
 import './Rocket.css';
 
 const Rocket = (props) => {
-  const { id, name, image, reserve, description } = props;
+  const {
+    id,
+    name,
+    image,
+    reserve,
+    description,
+  } = props;
   const dispatch = useDispatch();
   const reserveSpan = document.getElementById('reserved');
 
@@ -16,18 +22,18 @@ const Rocket = (props) => {
       dispatch(reserveRocket(id));
       reserveSpan.classList.toggle('reserved');
     }
-  }
+  };
   return (
     <>
       <ul className="container">
         <li className="rocket">
-          <img className="thumbnail" src={image} />
+          <img className="thumbnail" src={image} alt={name} />
           <div className="infoContainer">
             <h2 className="rocketName">{name}</h2>
             <span className="" id="reserved">{reserve ? 'RESERVED' : ''}</span>
             <span className="rocketInfo">{description}</span>
             <div>
-              <button className="rocketButton" onClick={handleClick}>{reserve ? 'Cancel Reservation' : 'Reserve Rocket'}</button>
+              <button type="button" className="rocketButton" onClick={handleClick}>{reserve ? 'Cancel Reservation' : 'Reserve Rocket'}</button>
             </div>
           </div>
         </li>
@@ -37,7 +43,7 @@ const Rocket = (props) => {
 };
 
 Rocket.propTypes = {
-  id: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   reserve: PropTypes.bool.isRequired,

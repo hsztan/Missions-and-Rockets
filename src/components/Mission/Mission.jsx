@@ -28,7 +28,7 @@ const Mission = (props) => {
           {join ? 'Active Member' : 'NOT A MEMBER'}
         </p>
       </td>
-      <td className="status-btn">
+      <td className="action">
         <button
           type="button"
           className={join ? 'btn active' : 'btn'}
