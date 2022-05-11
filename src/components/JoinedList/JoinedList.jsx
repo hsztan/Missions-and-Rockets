@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux';
+import './JoinedList.styles.scss';
 
 const JoinedList = () => {
   const rockets = useSelector((state) => state.rockets);
@@ -8,19 +9,19 @@ const JoinedList = () => {
   const activeMissions = missions.filter((mission) => mission.join);
 
   return (
-    <div>
+    <div className="joined">
       <div className="missions">
-        <h1>Missions</h1>
+        <h1>My Missions</h1>
         <ul>
           {activeMissions.map((mission) => (
-            <li key={mission.id}>
+            <li key={mission.mission_id}>
               <h2>{mission.mission_name}</h2>
             </li>
           ))}
         </ul>
       </div>
       <div className="rockets">
-        <h1>Rockets</h1>
+        <h1>My Rockets</h1>
         <ul>
           {activeRockets.map((rocket) => (
             <li key={rocket.id}>
