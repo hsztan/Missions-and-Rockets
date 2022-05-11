@@ -13,7 +13,6 @@ const Rocket = (props) => {
   } = props;
   const dispatch = useDispatch();
   const reserveSpan = document.getElementById(id);
-  const rocketButton = document.getElementById(id);
 
   const handleClick = () => {
     if (reserve) {
@@ -32,7 +31,7 @@ const Rocket = (props) => {
           <img className="thumbnail" src={image} alt={name} />
           <div className="infoContainer">
             <h2 className="rocketName">{name}</h2>
-            <span className="" id={id}>{reserve ? 'RESERVED' : ''}</span>
+            <span className="" id={id}>{reserve ? 'Reserved' : ''}</span>
             <span className="rocketInfo">{description}</span>
             <div>
               <button type="button" className={reserve ? 'rocketButton-active' : 'rocketButton'} onClick={handleClick}>{reserve ? 'Cancel Reservation' : 'Reserve Rocket'}</button>
