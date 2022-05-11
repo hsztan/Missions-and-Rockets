@@ -1,0 +1,61 @@
+.missions-list {
+  display: flex;
+  text-align: left;
+  table {
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    line-height: 1.5;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    padding-bottom: 1rem;
+  }
+  tr {
+    &:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  }
+  .name {
+    font-weight: bold;
+    width: 15%;
+    vertical-align: top;
+  }
+  .description {
+    width: 55%;
+  }
+  .status {
+    text-align: center;
+    width: 15%;
+    p {
+      font-weight: bold;
+      background-color: #6c757e;
+      color: #fff;
+      border-radius: 5px;
+    }
+    p.active {
+      background-color: #1aa1b9;
+    }
+  }
+  .action {
+    text-align: center;
+    width: 15%;
+  }
+  .btn {
+    font-size: 1.2rem;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 0.5rem 0.8rem;
+    font-family: inherit;
+    background-color: transparent;
+  }
+  .btn.active {
+      color: #dc3646;
+      border: 1px solid #dc3646;
+  }
+  .btn:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+}

@@ -20,16 +20,24 @@ const Mission = (props) => {
   };
 
   return (
-    <li className="mission">
-      <h2>{name}</h2>
-      <p>{description}</p>
-      <p className="mission-status">
-        {join ? 'Active Member' : 'NOT A MEMBER'}
-      </p>
-      <button onClick={handleClick} type="button" className="mission-btn">
-        {join ? 'Leave' : 'Join'}
-      </button>
-    </li>
+    <tr className="mission">
+      <td className="name">{name}</td>
+      <td className="description">{description}</td>
+      <td className="status">
+        <p className={join ? 'active' : ''}>
+          {join ? 'Active Member' : 'NOT A MEMBER'}
+        </p>
+      </td>
+      <td className="status-btn">
+        <button
+          type="button"
+          className={join ? 'btn active' : 'btn'}
+          onClick={handleClick}
+        >
+          {join ? 'Leave Mission' : 'Join   Mission'}
+        </button>
+      </td>
+    </tr>
   );
 };
 
