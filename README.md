@@ -1,6 +1,6 @@
-# BookStore
+# Space Travelers
 
-> This is a book store SPA app that creates a library of books which can store books and its authors as well as showing the status of the book. The state is managed with Redux.
+> This is a Space Travelers SPA app that creates a rockets and missions lists which users can book and join missions and rockets. The state is managed with Redux.
 ## Built With
 
 - HTML
@@ -89,6 +89,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - GitHub: [@hsztan](https://github.com/hsztan)
 - Twitter: [@hsztanski](https://twitter.com/hsztanski)
 - LinkedIn: [henry-nawrocki](https://linkedin.com/in/henry-nawrocki)
+
+👤 **Dangelo Arrivillaga**
+
+- GitHub: [@Dangelo-JAN](https://github.com/Dangelo-JAN)
+- LinkedIn: [Soluciones Empresriales Dangelo Arrivillaga](https://www.linkedin.com/in/soluciones-empresariales-dangelo-arrivillaga-2a144718a/)
 
 ## 🤝 Contributing
 
