@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+.container {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.rocket {
+  display: flex;
+  list-style: none;
+  padding: 1em;
+  margin: 0 1em;
+}
+
+.thumbnail {
+  width: 20vw;
+  height: 20vw;
+}
+
+.infoContainer {
+  margin-left: 1em;
+}
+
+.rocketName {
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.reserved {
+  width: 5em;
+  height: 2em;
+  padding: 0.1em;
+  margin-right: 0.5rem;
+  background-color: #18a2b9;
+  color: #fff;
+  border-radius: 5px;
+  border: solid #18a2b9;
+}
+
+.rocketInfo {
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.rocketButton {
+  min-width: 221px;
+  height: 2em;
+  margin-top: 1em;
+  background-color: #045dfa;
+  color: #fff;
+  border-radius: 5px;
+  border: solid #045dfa;
+  font-size: 1.5em;
+}
+
+.rocketButton-active {
+  min-width: 221px;
+  height: 2em;
+  margin-top: 1em;
+  background-color: #fff;
+  color: #6d757d;
+  border-radius: 5px;
+  border: solid 1px #000;
+  font-size: 1.5em;
+}

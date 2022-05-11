@@ -1,0 +1,41 @@
+.navbar {
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    height: 3rem;
+    background-color: #fff;
+  }
+
+  &-brand {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 1.5rem;
+
+    img {
+      width: 3rem;
+    }
+  }
+
+  &-NavLinks {
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
+
+    .active {
+      text-decoration: underline;
+    }
+  }
+}

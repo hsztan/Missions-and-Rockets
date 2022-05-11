@@ -1,0 +1,37 @@
+.joined {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 0 1rem;
+
+  .missions,
+  .rockets {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  ul {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    :last-child {
+      border: none;
+    }
+
+    width: 100%;
+    margin-top: 1rem;
+    list-style: none;
+
+    li {
+      padding: 0.5rem;
+      border-bottom: 1px solid #ccc;
+      height: 3rem;
+
+      h2 {
+        font-size: 1rem;
+        font-weight: 300;
+      }
+    }
+  }
+}
