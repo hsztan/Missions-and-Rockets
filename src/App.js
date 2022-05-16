@@ -12,7 +12,7 @@ const App = () => (
     <Routes>
       <Route exact path="/" element={<RocketsPage />} />
       <Route exact path="/missions/:mission_id/" element={<MissionDetails />} />
-      <Route exact path="/missions/:mission_id/:color" element={<MissionDetails />} />
+      {/* <Route exact path="/missions/:mission_id/:color" element={<MissionDetails />} /> */}
       <Route exact path="/missions" element={<MissionsPage />} />
       <Route exact path="/profile" element={<ProfilePage />} />
     </Routes>

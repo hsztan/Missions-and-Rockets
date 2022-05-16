@@ -22,7 +22,7 @@ const Mission = (props) => {
 
   return (
     <tr className="mission">
-      <td className="name"><Link to={`/missions/${id}/green`}>{name}</Link></td>
+      <td className="name"><Link to={`/missions/${id}`}>{name}</Link></td>
       <td className="description">{description}</td>
       <td className="status">
         <p className={join ? 'active' : ''}>
